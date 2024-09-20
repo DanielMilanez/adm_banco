@@ -1,1 +1,0 @@
-# Livro de lógica de programação
