@@ -7,7 +7,8 @@ frm.addEventListener("submit", (e)=>{
     const mascluno = frm.inMasculino.checked;
     const altura = Number(frm.inAltura.value);
 
-    let peso = mascluno ? Math.pow(altura, 2) * 22 : Math.pow(altura, 2 * 21);
+    // Operador ternário em JS
+    let peso = mascluno ? Math.pow(altura, 2) * 22 : Math.pow(altura, 2) * 21;
 
     resp.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(2)}kg`;
 });
