@@ -6,10 +6,9 @@ function verificaTriangulo(){
     const ladoB = Number(frm.ladoB.value);
     const ladoC = Number(frm.ladoC.value);
 
-    let formarTriangulo = false;
-    let veirifa = ladoA + ladoB > ladoC && ladoB + ladoC > ladoA && ladoA + ladoC > ladoB ? formarTriangulo = true : formarTriangulo = false; 
+    let veirifa = ladoA + ladoB > ladoC && ladoB + ladoC > ladoA && ladoA + ladoC > ladoB ? verifica = true : verifica = false; 
     
-    if (formarTriangulo){
+    if (veirifa){
         if (ladoA == ladoB && ladoB == ladoC){
             response.innerText = `Podem formar um triângulo Equilatero`;
         }

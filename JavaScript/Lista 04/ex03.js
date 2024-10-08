@@ -9,11 +9,11 @@ function calcular(){
     if (value < 1){
         response.innerText = "Valor inválido!";
     }
-    else if(value >= 1 && value < 1.75){
+    else if(value < 1.75){
         response.innerText = "Tempo: 30";
         troco = value - 1;
     }
-    else if(value >= 1.75 && value < 3){
+    else if(value < 3){
         response.innerText = "Tempo: 60";
         troco = value - 1.75;
     }
