@@ -6,16 +6,21 @@ function verificaTriangulo(){
     const ladoB = Number(frm.ladoB.value);
     const ladoC = Number(frm.ladoC.value);
 
-    if(ladoA + ladoB > ladoC){
-        response.innerText = "Pode formar um triângulo!";
-    }
-    else if (ladoC + ladoA > ladoB){
-        response.innerText = "Pode formar um triângulo!";
-    }
-    else if(ladoC + ladoB > ladoA){
-        response.innerText = "Pode formar um triângulo!";
+    let formarTriangulo = false;
+    let veirifa = ladoA + ladoB > ladoC && ladoB + ladoC > ladoA && ladoA + ladoC > ladoB ? formarTriangulo = true : formarTriangulo = false; 
+    
+    if (formarTriangulo){
+        if (ladoA == ladoB && ladoB == ladoC){
+            response.innerText = `Podem formar um triângulo Equilatero`;
+        }
+        else if (ladoA != ladoB && ladoB != ladoC){
+            response.innerText = `Podem formar um triângulo Escaleno`;
+        }
+        else{
+            response.innerText = `Podem formar um triângulo Isóceles`;
+        }
     }
     else{
-        response.innerText = "Não pode formar um triângulo!";
+        response.innerText = `Valores inseridos, não podem formar um tirângulo`;
     }
 }
