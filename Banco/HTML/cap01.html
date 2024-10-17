@@ -8,13 +8,23 @@
     <link rel="stylesheet" href="../CSS/cap01.css">
     <title>Primeiros Passos</title>
 </head>
+
 <body>
     <h1>Banco de Dados</h1>
+
+    <ul>
+        <h2>Conceitos</h2>
+        <li>DADO: Um registro qualquer</li>
+        <li>INFORMAÇÃO: Conjunto de dados organizados que possuam significado</li>
+        <li>Uma coleção organizada de dados, representando um aspecto do mundo real</li>
+    </ul>
+
     <ul>
         <h2>SGBD</h2>
 
         <li>São uma coleção de softwares que permite aos usuários criarem e manterem um ou mais banco de dados.</li>
-        <li></li>
+        <li>Permitem proteger o banco de dados e mantê-lo a longo prazo</li>
+        <li>Permitem a realização de tarefas como compartilhamento dos BD entre usuários e aplicações</li>
     </ul>
     <ul>
         <h2>Características e funcionalidades</h2>
@@ -45,25 +55,62 @@
         <h2>Modelo hierárquico</h2>
         <li>Neste modelo os dados são organizados de forma hierárquica, com conjuntos de tipos de registro
             interconectados por meio de ligações.</li>
-        <li>Sua ligação represe</li>
+        <li>Sua ligação representa uma relaçao pai para filho</li>
+        <li>Seu diagrama possui uma estrutura de arvore. O acesso sempre se da de pai para filho.</li>
     </ul>
     <ul>
         <h2>Modelo em rede</h2>
-        <li></li>
-        <li></li>
+        <li>São organizados em tipos e ligações entre os registros</li>
+        <li>Não possui uma restrição hierárquica</li>
     </ul>
     <ul>
         <h2>Modelo relacional</h2>
         <li>Os dados são registrados como entidades e possuem sua descrição como atributos</li>
-        <li></li>
+        <li>As entidades podem se relacionar entre si e permitem uma rápida recuperação dos dados de forma segura e
+            rápida</li>
+
+        <p>Os princípios do modelo relacional foram esboçados por Edgar Frank Codd (IBM) em 1970, publicado em um artigo
+            de nome "A relational model of data for large shared data banks"</p>
+        <p>Antes disso se utilizava modelos como hierárquico e o modelo de rede</p>
+        <p>Nesse modelo os dados são organizados em tabelas bidimensionais</p>
+        <p>Essas tabelas também podem ser chamadas de <i>relações</i>.</p>
+
+        <p>Relação é uma forma de se organizar os dados em linhas e colunas</p>
+        <p>baseado em lógica e teoria de conjuntos</p>
+
+        <h2>Componentes do modelo relacional</h2>
+        <li>Coleção de objetos ou relações que armazenam os dados</li>
+        <li>Possuem mecanismos que garantem a integridade dos dados, para precisão e consistência</li>
+        <li>TABELA: estrutura básica de armazenamento no SGBDR</li>
+        <li>TUPLA: linha/ registro que representa todos os dados de uma entidade.</li>
+        <li>COLUNA: Unidade que armazena um tipo especifíco de dado (valor), ou não armazena, ficando com um valor nulo
+        </li>
+        <li>RELACIONAMENOT: Associação entre as entidades (tabelas), conectadas por chaves primarias e estrangerias</li>
+        <li>OUTROS: Índices, funções, etc.</li>
+        <li>Chave primaria: coluna (atributo) que indica um registro de forma exclusiva na tabela</li>
+        <li>Chave estrangeira: Coluna que define como as tabelas se relacionam umas com as outras. Exemplo: uma tabela
+            pedidos pode haver uma chave estrangeira efetuando um relacionamento com uma chave primaria de uma tabela
+            cliente.</li>
     </ul>
     <h1>Modelagem de dados</h1>
     <ul>
         <li>É o processo de criação de um modelo de dados para um sistema de informação com aplicação técnicas
             especificas</li>
-        <li>Processo de definir e analisar os requisitos de dados necessários para</li>
-        <li></li>
+        <li>Processo de definir e analisar os requisitos de dados necessários para reproduzir de forma informatizada um
+            contexto do mundo real</li>
+        <li>Um modelo de dados sempre force uma estrutura para os dados usados em um SI</li>
     </ul>
-
+    <h1>Analise de requisitos</h1>
+    <ul>
+        <li>Nesta etapa você levanta todos os dados do mundo real que necessitam estar presente no seu banco de dados. Esta etapa antes mesmo de começar a modelar o seu banco de dados</li>
+    
+    </ul>
+    <h2>Modelo entidade-relacionamento</h2>
+    <p>MER, cria um diagrama a partir das especificações do levantamento de requisitos, permitindo ilustrar as entidades em um negócio e também relacionamentos entre elas.</p>
+    
+    <h2>Componentes do MER</h2>
+    <li>ENTIDADE: Algo significativo, sobre o qual devemos possuir informações</li>
+    <li>ATRIBUTO: Algo que descreve ou qualifica uma entidade</li>
+    <li>RELACIONAMENTO: Trata-se de uma associação nomeada entre as entidades</li>
 </body>
 </html>
